@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaule MC — Nepal's Minecraft SMP Store</title>
+<meta name="description" content="Official store for Gaule MC, Nepal's Minecraft SMP. Purchase ranks and crate keys through our Discord.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="Gaule MC">
+      <span class="brand-text">GAULE<em>MC</em></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#ranks">Ranks</a>
+      <a href="#crates">Crates</a>
+      <a href="#how">How to Buy</a>
+      <a class="btn btn-discord btn-sm" href="https://discord.gg/gTKaa9RB7" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Minecraft-style Himalayan landscape at sunset"></div>
+  <div class="hero-fade"></div>
+  <div class="container hero-content">
+    <div class="hero-logo">
+      <img src="assets/logo.png" alt="Gaule MC logo">
+    </div>
+    <h1 class="hero-title">GAULE<span>MC</span></h1>
+    <p class="hero-tag">Nepal's ultimate Minecraft SMP.</p>
+    <p class="hero-sub">Claim your rank, unlock powerful commands and rise from <b>Mukhiya</b> to <b>Mahadev</b>. Every purchase is handled safely through our Discord.</p>
+    <div class="hero-cta">
+      <a class="btn btn-discord" href="https://discord.gg/gTKaa9RB7" target="_blank" rel="noopener">Join the Discord</a>
+      <a class="btn btn-ghost" href="#ranks">View Ranks</a>
+    </div>
+    <div class="hero-chips">
+      <div class="chip"><b>5</b><span>Ranks</span></div>
+      <div class="chip"><b>4</b><span>Crate Tiers</span></div>
+      <div class="chip"><b>99</b><span>Max Homes</span></div>
+      <div class="chip"><b>NP</b><span>Nepal Based</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="ranks">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// SHOP</span>
+        <h2>Server Ranks</h2>
+        <p>Permanent ranks packed with homes, auction house slots and exclusive kits. Hit buy to purchase through Discord.</p>
+      </div>
+      <div class="ranks-grid" id="ranksGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="crates">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// LOOT</span>
+        <h2>Crate Keys</h2>
+        <p>Open crates for gear, money and rare rewards. Keys are delivered in-game after purchase.</p>
+      </div>
+      <div class="crates-grid" id="cratesGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">// GUIDE</span>
+        <h2>How to Buy</h2>
+        <p>All purchases are completed inside our Discord server — fast, safe and staff-assisted.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Join our Discord</h3>
+          <p>Click the button and join the Gaule MC community server.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Open a ticket</h3>
+          <p>Open a purchase ticket for the rank or crate keys you want.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Pay &amp; play</h3>
+          <p>Staff will guide the payment, then apply your rank or deliver your keys in-game.</p>
+        </div>
+      </div>
+      <div class="cta-banner reveal">
+        <img src="assets/logo.png" alt="">
+        <div class="cta-text">
+          <h3>Ready to rank up?</h3>
+          <p>Join the Discord and open a ticket — we'll take care of the rest.</p>
+        </div>
+        <a class="btn btn-discord" href="https://discord.gg/gTKaa9RB7" target="_blank" rel="noopener">Open Discord</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Gaule MC">
+      <div><b>GAULE MC</b><span>Nepal's Minecraft SMP</span></div>
+    </div>
+    <p class="footer-note">Prices in Rs. Gaule MC is not affiliated with Mojang Studios or Microsoft.</p>
+    <a class="footer-discord" href="https://discord.gg/gTKaa9RB7" target="_blank" rel="noopener">discord.gg/gTKaa9RB7</a>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <div class="modal-item">
+      <img id="modalImg" src="" alt="">
+      <div>
+        <span class="modal-kind" id="modalKind">RANK</span>
+        <h3 id="modalTitle">—</h3>
+        <div class="modal-price" id="modalPrice">Rs 0</div>
+      </div>
+    </div>
+    <ol class="modal-steps">
+      <li>Join the <b>Gaule MC Discord</b></li>
+      <li>Open a <b>ticket</b> in the purchase channel</li>
+      <li>Pay and receive your purchase <b>in-game</b></li>
+    </ol>
+    <a class="btn btn-discord btn-block" href="https://discord.gg/gTKaa9RB7" target="_blank" rel="noopener">Open Discord to Buy</a>
+    <p class="modal-note">Purchases are handled by Gaule MC staff inside Discord.</p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
